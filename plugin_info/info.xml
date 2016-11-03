@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+    <id>outilsdev</id>
+    <name>Outil de développement</name>
+    <description>Permet de créer des plugins pour jeedom</description>
+    <icon>fa fa-file</icon>
+    <licence>AGPL</licence>
+    <author>Florian Gouyon</author>
+    <installation>Aucune</installation>
+    <require>1.200</require>
+    <version>0.1</version>
+    <category>programming</category>
+</info>
