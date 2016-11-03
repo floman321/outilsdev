@@ -22,3 +22,20 @@ if (!isConnect()) {
     die();
 }
 ?>
+
+    <form class="form-horizontal">
+    <fieldset>
+    <div class="form-group">
+    <label class="col-lg-4 control-label">Theme</label>
+    <div class="col-lg-2">
+    <select class="configKey form-control" data-l1key="theme">
+    <option value="">Normal</option>
+    <option value="Material">Sombre</option>
+    </select>
+    </div>
+    </div>
+    </fieldset>
+    </form>
+
+    
+

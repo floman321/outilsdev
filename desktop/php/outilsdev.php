@@ -19,7 +19,14 @@ include_file('3rdparty', 'codemirror/mode/perl/perl', 'js');
 
 include_file('3rparty/elfinder', 'elfinder.min', 'js', 'outilsdev');
 
-include_file('3rparty/elfinder', 'theme', 'css', 'outilsdev');
+$themes = config::byKey('theme', 'outilsdev','');
+if ($themes != ''){
+    include_file('3rparty/elfinder', $themes.'/theme', 'css', 'outilsdev');
+}else{
+    include_file('3rparty/elfinder', 'theme', 'css', 'outilsdev');
+}
+    
+
 include_file('3rparty/elfinder', 'elfinder.min', 'css', 'outilsdev');
 
 ?>
@@ -28,6 +35,7 @@ include_file('3rparty/elfinder', 'elfinder.min', 'css', 'outilsdev');
 
 <script src="/plugins/outilsdev/3rparty/elfinder/js/i18n/elfinder.fr.js"></script>
 
+
 <div class="alert alert-danger">
     L'utilisation de ce plugin est à vos risques et périls. Avant de réaliser une action, assurez-vous de savoir ce que vous faites.<br>
     N'oubliez pas de faire une sauvegarde!
@@ -35,8 +43,10 @@ include_file('3rparty/elfinder', 'elfinder.min', 'css', 'outilsdev');
 
 <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active"><a href="#finder" role="tab" data-toggle="tab">{{Navigateur et éditeur de fichier}}</a></li>
+    <li role="presentation" ><a href="#blibliotheque" role="tab" data-toggle="tab">{{Blibliothèque}}</a></li>
     <li role="presentation" ><a href="#pluginmaker" role="tab" data-toggle="tab">{{Création de plugin}}</a></li>
     <li role="presentation" ><a href="#testexpression" role="tab" data-toggle="tab">{{Testeur d'expressions}}</a></li>
+        
 </ul>
 <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="finder">
@@ -169,6 +179,56 @@ include_file('3rparty/elfinder', 'elfinder.min', 'css', 'outilsdev');
 
         
     </div>
+                                
+                                
+                                
+                                
+                                <div role="tabpanel" class="tab-pane" id="blibliotheque">
+                                <div class="row">
+                                <div class="col-sm-6">
+                                
+                                <form class="form-horizontal">
+                                
+                                <fieldset>
+                                <legend>{{Trucs a savoir}}</legend>
+                                
+                                Un plugin est composé :<br>
+                                d'un objet principal (ex outilsdev) et de commandes (ex outilsdev_CMD).<br>
+                                <br>
+                                L'utilisateur pourra créer autant de objet principal.<br>
+                                <br>
+                                <h3>Dossier Core : Contient de coeur du plugin</h3>
+                                
+                                <p>
+                                Ici, on trouvera la création des commandes (bas du document)<br>
+                                Mais surtout la gestion de l'objet principale et la mise à jour de celui ci (haut du document)<br>
+                                <br>
+                                <br>
+                                Mise à jour d'un objet :<br>
+                                - Soit via un cron (facile et rapide a mettre en oeuvre)<br>
+                                - Mettre du code dans la procédure dans "cron" toutes les minutes (déconseillés)<br>
+                                - Mettre du code dans la procédure dans "cronHourly" toutes les heures<br>
+                                - Mettre du code dans la procédure dans "cronDayly" tous les jours<br>
+                                <br>
+                                <br>
+                                - Soit via un deamon (+ compliqué mais plus précis)<br>
+                                a compléter
+                                </p>
+                                
+                                <h3>Dossier Desktop : Contient la partie affichage (paramètrage)</h3>
+                                
+                                
+                                </fieldset>
+                                
+                                </form>
+                                
+                                
+                                </div>
+                                </div>
+                                </div>
+                                
+                                
+                                
 </div>
 
 <div id="md_editFile" title="Editer...">
