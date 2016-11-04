@@ -27,7 +27,18 @@ if ($themes != ''){
 }
     
 
+
+
+// STYLE
+
 include_file('3rparty/elfinder', 'elfinder.min', 'css', 'outilsdev');
+
+$fontsize_editor = config::byKey('fontsize_editor', 'outilsdev','12').'px';
+echo "<style>
+.CodeMirror pre {
+  font-size: $fontsize_editor;
+}
+</style>";
 
 ?>
 <style>
@@ -231,7 +242,7 @@ include_file('3rparty/elfinder', 'elfinder.min', 'css', 'outilsdev');
                                 
 </div>
 
-<div id="md_editFile" title="Editer...">
+<div id="md_editFile" title="Editer..." >
     <div style="display: none;" id="div_editFileAlert"></div>
     <textarea id="ta_editFile" class="form-control" style="height: 100%;"></textarea>
 </div>

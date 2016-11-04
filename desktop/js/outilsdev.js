@@ -437,6 +437,7 @@ function editFile(path){
 				matchBrackets: true
 			});
 			editor.getWrapperElement().style.height = ($('#md_editFile').height()) + 'px';
+			
 			editor.refresh();
 		}, 1);
 	}

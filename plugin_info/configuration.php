@@ -24,17 +24,35 @@ if (!isConnect()) {
 ?>
 
     <form class="form-horizontal">
-    <fieldset>
-    <div class="form-group">
-    <label class="col-lg-4 control-label">Theme</label>
-    <div class="col-lg-2">
-    <select class="configKey form-control" data-l1key="theme">
-    <option value="">Normal</option>
-    <option value="Material">Sombre</option>
-    </select>
-    </div>
-    </div>
-    </fieldset>
+		<fieldset>
+			<div class="form-group">
+				<label class="col-lg-4 control-label">Theme</label>
+					<div class="col-lg-2">
+						<select class="configKey form-control" data-l1key="theme">
+						<option value="">Normal</option>
+						<option value="Material">Sombre</option>
+						</select>
+					</div>
+			</div>
+			
+			<div class="form-group">
+				<label class="col-lg-4 control-label">Taille Police Editeur de texte</label>
+					<div class="col-lg-2">
+						<select class="configKey form-control" data-l1key="fontsize_editor">
+						<option value="12">12</option>
+						<option value="14">14</option>
+						<option value="16">16</option>
+						<option value="18">18</option>
+						<option value="20">20</option>
+						<option value="22">22</option>
+						<option value="24">24</option>
+						<option value="26">26</option>
+						<option value="28">28</option>
+						</select>
+					</div>
+			</div>
+			
+		</fieldset>
     </form>
 
     
