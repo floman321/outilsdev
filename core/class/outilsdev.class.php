@@ -69,7 +69,7 @@ class outilsdev extends eqLogic {
 
       $cibDir = "../../tmp/" . $params['plugin_id'] . '/';
 
-      $templateFile = file_get_contents("https://github.com/GaelGRIFFON/plugin-template/archive/master.zip");
+      $templateFile = file_get_contents("https://github.com/jeedom/plugin-template/archive/master.zip");
       if($templateFile === FALSE){
         throw new Exception(__('Impossible de télécharger le fichier template.', __FILE__));
       }
@@ -121,6 +121,7 @@ class outilsdev extends eqLogic {
 
       $file_to_replace = array(
         $cibDir . 'plugin_info/info.xml',
+		$cibDir . 'plugin_info/info.json',
         $cibDir . 'plugin_info/install.php',
         $cibDir . 'plugin_info/configuration.php',
         $cibDir . 'doc/fr_FR/index.asciidoc',
@@ -136,6 +137,13 @@ class outilsdev extends eqLogic {
       foreach($params as $param => $value){      
         $replace['#' . $param . '#'] = $value;
       }
+	  
+	  $replace['template'] = $params['plugin_id'];
+	  $replace['Template'] = $params['plugin_name'];
+	  $replace['<category>programming</category>'] = "<category>".$params['plugin_category'];."</category>";
+	  $replace['<author>Loïc</author>'] = "<author>".$params['plugin_author']."</author>";
+	  $replace['<description>Plugin template pour la création de plugin</description>'] = "<description>".$params['plugin_description']."<description>";
+      $replace['<installation>Aucune</installation>'] = "<installation>".$params['plugin_installation']."</installation>";
 
       log::add('outilsdev', 'debug', print_r($replace,true));
 
