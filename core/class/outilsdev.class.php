@@ -140,7 +140,7 @@ class outilsdev extends eqLogic {
 	  
 	  $replace['template'] = $params['plugin_id'];
 	  $replace['Template'] = $params['plugin_name'];
-	  $replace['<category>programming</category>'] = "<category>".$params['plugin_category'];."</category>";
+	  $replace['<category>programming</category>'] = "<category>".$params['plugin_category']."</category>";
 	  $replace['<author>Loïc</author>'] = "<author>".$params['plugin_author']."</author>";
 	  $replace['<description>Plugin template pour la création de plugin</description>'] = "<description>".$params['plugin_description']."<description>";
       $replace['<installation>Aucune</installation>'] = "<installation>".$params['plugin_installation']."</installation>";
