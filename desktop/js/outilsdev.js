@@ -23,7 +23,7 @@
 /* Fonction appelé pour mettre l'affichage du tableau des commandes de votre eqLogic
  * _cmd: les détails de votre commande
  */
-/* global jeedom */
+/* global jeedomee1 */
 
 
 editor = null;
@@ -78,13 +78,13 @@ $().ready(function() {
                                                        
                                                        
                                                        close : function(textarea, instance) {
-                                                       this.myCodeMirror = null;
+                                                       //this.myCodeMirror = null;
                                                        },
                                                        
                                                        
                                                        save : function(textarea, editor) {
                                                        textarea.value = this.myCodeMirror.getValue();
-                                                       this.myCodeMirror = null;
+                                                       //this.myCodeMirror = null;
                                                        }
                                                        
                                                        },
@@ -100,13 +100,13 @@ $().ready(function() {
                                                        },
                                                        
                                                        close : function(textarea, instance) {
-                                                       this.myCodeMirror = null;
+                                                       //this.myCodeMirror = null;
                                                        },
                                                        
                                                        
                                                        save : function(textarea, editor) {
                                                        textarea.value = this.myCodeMirror.getValue();
-                                                       this.myCodeMirror = null;
+                                                        //this.myCodeMirror = null;
                                                        }
                                                        
                                                        },
@@ -125,13 +125,13 @@ $().ready(function() {
                                                        },
                                                        
                                                        close : function(textarea, instance) {
-                                                       this.myCodeMirror = null;
+                                                        //this.myCodeMirror = null;
                                                        },
                                                        
                                                        
                                                        save : function(textarea, editor) {
                                                        textarea.value = this.myCodeMirror.getValue();
-                                                       this.myCodeMirror = null;
+                                                         //this.myCodeMirror = null;
                                                        }
                                                        
                                                        },
@@ -147,13 +147,13 @@ $().ready(function() {
                                                        },
                                                        
                                                        close : function(textarea, instance) {
-                                                       this.myCodeMirror = null;
+                                                        //this.myCodeMirror = null;
                                                        },
                                                        
                                                        
                                                        save : function(textarea, editor) {
                                                        textarea.value = this.myCodeMirror.getValue();
-                                                       this.myCodeMirror = null;
+                                                        //this.myCodeMirror = null;
                                                        }
                                                        
                                                        } ] //editors

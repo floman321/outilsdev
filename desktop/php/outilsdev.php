@@ -203,30 +203,8 @@ echo "<style>
                                 <fieldset>
                                 <legend>{{Trucs a savoir}}</legend>
                                 
-                                Un plugin est composé :<br>
-                                d'un objet principal (ex outilsdev) et de commandes (ex outilsdev_CMD).<br>
-                                <br>
-                                L'utilisateur pourra créer autant de objet principal.<br>
-                                <br>
-                                <h3>Dossier Core : Contient de coeur du plugin</h3>
-                                
-                                <p>
-                                Ici, on trouvera la création des commandes (bas du document)<br>
-                                Mais surtout la gestion de l'objet principale et la mise à jour de celui ci (haut du document)<br>
-                                <br>
-                                <br>
-                                Mise à jour d'un objet :<br>
-                                - Soit via un cron (facile et rapide a mettre en oeuvre)<br>
-                                - Mettre du code dans la procédure dans "cron" toutes les minutes (déconseillés)<br>
-                                - Mettre du code dans la procédure dans "cronHourly" toutes les heures<br>
-                                - Mettre du code dans la procédure dans "cronDayly" tous les jours<br>
-                                <br>
-                                <br>
-                                - Soit via un deamon (+ compliqué mais plus précis)<br>
-                                a compléter
-                                </p>
-                                
-                                <h3>Dossier Desktop : Contient la partie affichage (paramètrage)</h3>
+                                Voir cette page : 
+								<a href="https://github.com/jeedom/plugin-template/blob/e536bdb1718ef4d23842d7e9ba149cb76ef49ae7/doc/fr_FR/index.asciidoc">Lien vers Aide Template</a>
                                 
                                 
                                 </fieldset>
