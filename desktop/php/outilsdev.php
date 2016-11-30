@@ -204,8 +204,11 @@ echo "<style>
                                 <legend>{{Trucs a savoir}}</legend>
                                 
                                 Voir cette page : 
-								<a href="https://github.com/jeedom/plugin-template/blob/e536bdb1718ef4d23842d7e9ba149cb76ef49ae7/doc/fr_FR/index.asciidoc">Lien vers Aide Template</a>
-                                
+								<a href="https://github.com/jeedom/plugin-template/tree/e536bdb1718ef4d23842d7e9ba149cb76ef49ae7">Lien vers Exemple de plugin (Plugin Template)</a>
+                                  <br>
+								<a href="https://github.com/jeedom/plugin-template/blob/e536bdb1718ef4d23842d7e9ba149cb76ef49ae7/doc/fr_FR/index.asciidoc">Lien vers documentation du plugin Template </a>
+                                  <br>
+                                <a href="https://jeedom.com/doc_old/documentation/code/">Lien vers Doc développeurs Jeedom (Classes Utilisables)</a>
                                 
                                 </fieldset>
                                 
