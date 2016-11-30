@@ -118,10 +118,11 @@ class outilsdev extends eqLogic {
           throw new Exception(__('Impossible de renommer le fichier: ', __FILE__) . $old);
         }
       }
-
+      
+      unlink($cibDir . 'plugin_info/info.json');
+      
       $file_to_replace = array(
         $cibDir . 'plugin_info/info.xml',
-		$cibDir . 'plugin_info/info.json',
         $cibDir . 'plugin_info/install.php',
         $cibDir . 'plugin_info/configuration.php',
         $cibDir . 'doc/fr_FR/index.asciidoc',
@@ -149,7 +150,10 @@ class outilsdev extends eqLogic {
 
       foreach($file_to_replace as $file){
         $file_content = file_get_contents($file);
+        
         $file_content = template_replace($replace, $file_content);
+        
+        $file_content = str_replace('plugin.'.$params['plugin_id'], 'plugin.template', $file_content);
 
         if(!file_put_contents($file, $file_content)){
           throw new Exception(__('Impossible d\'appliquer le template sur le fichier: ', __FILE__) . $file);
@@ -159,6 +163,8 @@ class outilsdev extends eqLogic {
       if(!rename($cibDir , '../../../' . $params['plugin_id'])){
         throw new Exception(__('Impossible de déplacer le dossier dans le dossier plugin.', __FILE__));
       }
+      
+      update::findNewUpdateObject();
 
       return true;
     }
