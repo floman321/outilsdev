@@ -125,7 +125,7 @@ echo "<style>
                 <form class="form-horizontal">
                     <fieldset>
                         <div class="form-actions">
-                            <a class="btn btn-success" id="btn-create-plugin"><i class="fa fa-check-circle"></i> {{Créer mon plugin}}</a>
+                            <!-- <a class="btn btn-success" id="btn-create-plugin"><i class="fa fa-check-circle"></i> {{Créer mon plugin}}</a>-->
                         </div>
                     </fieldset>
                 </form>
