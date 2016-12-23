@@ -52,12 +52,14 @@ class outilsdev extends eqLogic {
       log::add('outilsdev', 'debug', print_r($params,true));
 
       $pluginAlreadyExist = false;
+      /*
       try{
         if(is_object(market::byLogicalId($params['plugin_id']))){
           log::add('outilsdev', 'debug', 'Plugin déjà éxistant sur le market');
           $pluginAlreadyExist = true;
         };
       } catch (Exception $e) {}
+      */
 
       if($pluginAlreadyExist){
         throw new Exception(__('L\'ID du plugin existe déjà sur le market!', __FILE__));
