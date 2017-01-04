@@ -209,7 +209,9 @@ echo "<style>
 								<a href="https://github.com/jeedom/plugin-template/blob/e536bdb1718ef4d23842d7e9ba149cb76ef49ae7/doc/fr_FR/index.asciidoc">Lien vers documentation du plugin Template </a>
                                   <br>
                                 <a href="https://jeedom.com/doc_old/documentation/code/">Lien vers Doc développeurs Jeedom (Classes Utilisables)</a>
-                                
+                                  <br>
+                                <a href="https://market.jeedom.fr">Lien vers le market (magasin de plugin Jeedom)</a>
+                                  
                                 </fieldset>
                                 
                                 </form>
