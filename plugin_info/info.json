@@ -10,6 +10,6 @@
     "version": "0.1",
     "category": "programming"
     "hasDependency" : false,
-	  "hasOwnDeamon" : false,
-	  "maxDependancyInstallTime" : 0
+    "hasOwnDeamon" : false,
+    "maxDependancyInstallTime" : 0
 }
