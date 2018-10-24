@@ -54,7 +54,7 @@ echo "<style>
 
 <ul class="nav nav-tabs" role="tablist">
     <li role="presentation" class="active"><a href="#finder" role="tab" data-toggle="tab">{{Navigateur et éditeur de fichier}}</a></li>
-    <li role="presentation" ><a href="#blibliotheque" role="tab" data-toggle="tab">{{Blibliothèque}}</a></li>
+    <li role="presentation" ><a href="#bibliotheque" role="tab" data-toggle="tab">{{Bibliothèque}}</a></li>
     <li role="presentation" ><a href="#pluginmaker" role="tab" data-toggle="tab">{{Création de plugin}}</a></li>
     <li role="presentation" ><a href="#testexpression" role="tab" data-toggle="tab">{{Testeur d'expressions}}</a></li>
         
@@ -187,48 +187,31 @@ echo "<style>
                 </form>
             </div>
         </div>
-
-        
     </div>
-                                
-                                
-                                
-                                
-                                <div role="tabpanel" class="tab-pane" id="blibliotheque">
-                                <div class="row">
-                                <div class="col-sm-6">
-                                
-                                <form class="form-horizontal">
-                                
-                                <fieldset>
+        <div role="tabpanel" class="tab-pane" id="blibliotheque">
+            <div class="row">
+                 <div class="col-sm-6">
+                      <form class="form-horizontal">
+                           <fieldset>
                                 <legend>{{Trucs a savoir}}</legend>
                                 
                                 Voir cette page : 
-								<a href="https://github.com/jeedom/plugin-template/tree/e536bdb1718ef4d23842d7e9ba149cb76ef49ae7">Lien vers Exemple de plugin (Plugin Template)</a>
+					<a href="https://github.com/jeedom/plugin-template/tree/e536bdb1718ef4d23842d7e9ba149cb76ef49ae7">Lien vers Exemple de plugin (Plugin Template)</a>
                                   <br>
-								<a href="https://github.com/jeedom/plugin-template/blob/e536bdb1718ef4d23842d7e9ba149cb76ef49ae7/doc/fr_FR/index.asciidoc">Lien vers documentation du plugin Template </a>
+					<a href="https://github.com/jeedom/plugin-template/blob/e536bdb1718ef4d23842d7e9ba149cb76ef49ae7/doc/fr_FR/index.asciidoc">Lien vers documentation du plugin Template </a>
                                   <br>
-                                <a href="https://jeedom.com/doc_old/documentation/code/">Lien vers Doc développeurs Jeedom (Classes Utilisables)</a>
+                                        <a href="https://jeedom.com/doc_old/documentation/code/">Lien vers Doc développeurs Jeedom (Classes Utilisables)</a>
                                   <br>
-                                <a href="https://market.jeedom.fr">Lien vers le market (magasin de plugin Jeedom)</a>
-                                  
+ 
                                 </fieldset>
-                                
-                                </form>
-                                
-                                
-                                </div>
-                                </div>
-                                </div>
-                                
-                                
-                                
-</div>
-
-<div id="md_editFile" title="Editer..." >
-    <div style="display: none;" id="div_editFileAlert"></div>
-    <textarea id="ta_editFile" class="form-control" style="height: 100%;"></textarea>
-</div>
-
+                        </form>                           
+                    </div>
+                 </div>
+              </div>
+           </div>
+           <div id="md_editFile" title="Editer..." >
+           <div style="display: none;" id="div_editFileAlert"></div>
+           <textarea id="ta_editFile" class="form-control" style="height: 100%;"></textarea>
+           </div>
 <?php include_file('desktop', 'outilsdev', 'js', 'outilsdev'); ?>
 <?php include_file('core', 'plugin.template', 'js'); ?>
