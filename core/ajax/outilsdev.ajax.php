@@ -17,7 +17,7 @@
  */
 
 try {
-    require_once dirname(__FILE__) . '/../../../../core/php/core.inc.php';
+    require_once __DIR__ . '/../../../../core/php/core.inc.php';
     include_file('core', 'authentification', 'php');
 
     if (!isConnect('admin')) {
@@ -100,7 +100,7 @@ try {
             throw new Exception(__('Le fichier est trop gros (maximum 1mo)', __FILE__));
         }
         
-        $filepath = dirname(__FILE__) . '/../../tmp/image.png';
+        $filepath = __DIR__ . '/../../tmp/image.png';
                 
         file_put_contents($filepath, file_get_contents($_FILES['file']['tmp_name']));
 
@@ -112,5 +112,4 @@ try {
 } catch (Exception $e) {
     ajax::error(displayExeption($e), $e->getCode());
 }
-?>
-3
+ 
